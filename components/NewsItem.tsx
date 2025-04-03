@@ -1,10 +1,7 @@
-import { RootState } from '@/redux';
-import { addFavorite, removeFavorite } from '@/redux/slices/favoriteSlice';
 import { NewsArticle } from '@/types/news';
 import { router } from 'expo-router';
-import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, Modal, Button, ScrollView, StyleSheet } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
 const NewsItem: React.FC<{ 
     article: NewsArticle 

@@ -44,9 +44,7 @@ export const useNews = () => {
 
   const loadMoreArticles = () => {
     if (!loading && hasMore) {
-        setLoading(true);
         setPage((prev) => prev + 1);
-        setLoading(false);
     }
   };
 
